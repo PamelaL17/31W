@@ -1,6 +1,6 @@
-## Projet de session du cours 31W
+### Projet de session du cours 31W
 
-# Introduction à un système de gestion de contenu
+## Introduction à un système de gestion de contenu
 
 # Les objectifs du thème
 1. Vous aider à réaliser votre propre thème
