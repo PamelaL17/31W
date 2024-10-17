@@ -1,16 +1,58 @@
 .global {
   width: 1100px;
   margin: 0 auto;
+  padding: 0 15px;
+  box-sizing: border-box;
 }
 
 .entete {
-  background-color: rgba(0, 128, 0, 0.492);
+  // Retirer l'espacement entre le header et le top
+  margin-top: 0;
+  padding-top: 20px;
+  background-color: rgba(78, 113, 112, 0.492);
+  text-align: center;
+}
+
+.header-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.entete h1,
+.entete h2 {
+  color: #000000;
+  margin: 0;
+}
+
+.entete h1 {
+  margin-bottom: 5px;
+}
+
+.entete h2 {
+  margin-bottom: 20px;
 }
 
 .principal {
-  background-color: rgba(255, 255, 0, 0.479);
+  background-color: #fafafab4;
+}
+
+.principal h2 {
+  text-align: center;
+  font-size: 1.8em;
+  margin-top: 30px;
+  margin-bottom: 20px;
 }
 
 .pied {
-  background-color: rgba(255, 0, 0, 0.364);
+  background-color: rgba(78, 113, 112, 0.492);
+  text-align: center;
+  padding: 20px;
+  color: black;
+}
+
+.pied .global {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }

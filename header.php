@@ -10,8 +10,10 @@
 <body>
   <header class="entete">
     <section class="global">
-      <h1><?php bloginfo('name'); ?></h1>
-      <h2><?php bloginfo('description'); ?></h2>
+      <div class="header-content">
+        <h1><?php bloginfo('name'); ?></h1>
+        <h2><?php bloginfo('description'); ?></h2>
+      </div>
 
       <!-- <nav>
         <ul>
@@ -20,18 +22,18 @@
           <li><a href="#">Contact</a></li>
         </ul>
       </nav> -->
-      <?php wp_nav_menu(array(
-        "menu"=>"principal",
-        "container"=>"nav"
-        )
-      ); ?>
-
-      <form class="recherche">
-        <input type="search" name="" id="" />
-        <img
-          src="https://s2.svgbox.net/hero-outline.svg?ic=search&color=000"
-          width="20"
-          height="20" />
-      </form>
+      <div class="menu-recherche">
+          <?php wp_nav_menu(array(
+            "menu" => "principal",
+            "container" => "nav"
+          )); ?>
+        <form class="recherche">
+          <input type="search" name="" id="" />
+          <img
+              src="https://s2.svgbox.net/hero-outline.svg?ic=search&color=000"
+              width="20"
+              height="20" />
+        </form>
+      </div>
     </section>
   </header>

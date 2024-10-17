@@ -3,8 +3,9 @@
       <div>
         Auteur : Pamela Limoges
       </div>
-      <div>2</div>
-      <div>3</div>
+      <div>
+        https://gftnth00.mywhc.ca/31w07/
+      </div>
     </section>
   </footer>
   <?php wp_footer(); ?>
