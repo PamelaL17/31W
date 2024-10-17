@@ -11,4 +11,4 @@
 
 ### Objectif : Réaliser un thème de base 
 - Auteur : Pamela Limoges
-- Description :
+- Description : Site web WordPress présentant une liste de cours avec un design épuré et responsive. Le site comprend un en-tête personnalisé, un menu de navigation, et affiche les cours sur deux colonnes avec un style moderne et interactif.
