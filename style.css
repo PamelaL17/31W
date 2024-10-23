@@ -4,7 +4,7 @@ Theme Name: theme 31w
 Theme URI: https://referenced.ca
 Author: Pamela Limoges
 Author URI: https://wordpress.org/
-Description:U thèeme de base qui nous permettra d'apprendre les rudiments de la création de thèeme
+Description: Un thème de base qui nous permettra d'apprendre les rudiments de la création de thème
 Tags: blog, one-column, custom-background, custom-colors, custom-logo, custom-menu, editor-style, featured-images, footer-widgets, full-width-template, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready, block-styles, wide-blocks, accessibility-ready
 Version: 1.0
 License: GNU General Public License v2 or later
@@ -373,86 +373,36 @@ p {
 .global {
   width: 1100px;
   margin: 0 auto;
-  padding: 0 15px;
-  box-sizing: border-box;
+  background-color: rgba(255, 255, 255, 0.184);
+  display: flex;
+  justify-content: space-between;
 }
 
 .entete {
-  margin-top: 0;
-  padding-top: 20px;
-  background-color: rgba(78, 113, 112, 0.492);
-  text-align: center;
-}
-
-.header-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.entete h1,
-.entete h2 {
-  color: #000000;
-  margin: 0;
-}
-
-.entete h1 {
-  margin-bottom: 5px;
-}
-
-.entete h2 {
-  margin-bottom: 20px;
+  background-color: rgba(11, 132, 132, 0.549);
 }
 
 .principal {
-  background-color: rgba(250, 250, 250, 0.7058823529);
-}
-
-.principal h2 {
-  text-align: center;
-  font-size: 1.8em;
-  margin-top: 30px;
-  margin-bottom: 20px;
+  background-color: rgba(200, 199, 199, 0.467);
 }
 
 .pied {
-  background-color: rgba(78, 113, 112, 0.492);
-  text-align: center;
-  padding: 20px;
-  color: black;
-}
-
-.pied .global {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  background-color: rgba(11, 132, 132, 0.549);
 }
 
 /* --------------------------------------------- components */
 .principal__conteneur {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
   gap: 20px;
-  margin-bottom: 30px;
 }
 
 .principal__article {
-  border: 1px solid rgba(78, 113, 112, 0.492);
-  flex: 0 1 calc(50% - 10px);
-  padding: 15px;
-  border-radius: 8px;
-  transition: transform 0.3s;
-  box-sizing: border-box;
-}
-
-.principal__article:hover {
-  transform: scale(1.05);
-}
-
-.principal__article:last-child:nth-child(odd) {
-  margin-right: auto;
-  margin-left: 0;
+  border: 1px solid #aaa;
+  flex: 1 1 340px;
+  padding: 10px;
 }
 
 /*
@@ -463,50 +413,40 @@ p {
 <li id="menu-item-60" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-60"><a href="http://localhost/31W/582-4c2-gestion-de-projets-multimedias/">Gestion de projets multimédias</a></li>
 </ul></nav>
 */
-.menu-principal-container {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  margin-bottom: 30px;
-}
 .menu-principal-container .menu {
   display: flex;
-  list-style: none;
-  padding: 0;
-  margin: 0;
+  list-style-type: none;
+  gap: 5px;
 }
 .menu-principal-container .menu .menu-item {
   margin: 0 15px;
 }
 .menu-principal-container .menu .menu-item a {
-  text-decoration: none;
-  color: #000000;
-  font-weight: bold;
-  transition: color 0.3s;
+  display: block;
+  padding: 3px;
+  background-color: rgba(0, 0, 0, 0.1);
 }
 .menu-principal-container .menu .menu-item a:hover {
-  color: #062c40;
+  background-color: rgba(0, 0, 0, 0.05);
 }
 
 /*
     .menu-principal-container
     .menu-principal-container .menu
     .menu-principal-container .menu .menu-item
-    .menu-principal-container .menu .menu-item .a
+    .menu-principal-container .menu .menu-item a
 */
-.menu-recherche {
-  display: flex;
-  justify-content: center;
-  margin-top: 30px;
-}
-
-.recherche {
-  display: flex;
+.entete__global {
   align-items: center;
 }
-.recherche .recherche input {
-  border: 1px solid #000000;
-  padding: 5px;
-  border-radius: 4px;
-  margin-right: 5px;
+
+.entete__titre h1,
+.entete__titre h2 {
+  margin: 0;
+}
+
+.entete__nav {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 }/*# sourceMappingURL=style.css.map */
