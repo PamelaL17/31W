@@ -7,18 +7,47 @@
 //   </button>
 // </form>
 
+// .recherche {
+
+// }
+
+// .recherche__input {
+
+// }
+
+// .recherche__bouton {
+
+// }
+
+// .recherche__bouton img {
+
+// }
+
 .recherche {
+    border: 1px solid rgba(0,0,0, .5);
 
-}
+    &__input, 
+    &__bouton {
+        background-color: rgba(0,0,0, .3);
+        border: none;
+        outline: none;
+        font-size: 1.5rem;
 
-.recherche__input {
+        &:hover {
+            background-color: (0,0,0, .05);
+        }
 
-}
+        &:focus {
+            background-color: (0,0,0, .02);
+            outline: none;
+        }
+    }
+    &__input::placeholder{
+        color: #aaa;
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+    img {
 
-.recherche__bouton {
-
-}
-
-.recherche__bouton img {
-    
+    }
 }
