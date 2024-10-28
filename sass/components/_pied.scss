@@ -1,6 +1,6 @@
 :root {
-  --couleur1: #22738090;
-  --couleur2: #8cb0bbb4;
+  --couleur1: #365d0c90;
+  --couleur2: #3b8834b4;
   --couleur3: #d0d1d6b1;
 }
 
@@ -20,4 +20,9 @@
             text-align: left;
         }
     }
+}
+
+.logo {
+    width: 150px;
+    height: 150px;
 }
