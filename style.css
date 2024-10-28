@@ -339,22 +339,27 @@ h2 {
 
 h3 {
   font-size: clamp(0.5625rem, -0.25rem + 2.6vw, 2.1875rem);
+  margin: 10px;
 }
 
 h4 {
   font-size: clamp(0.5rem, -0.1875rem + 2.2vw, 1.875rem);
+  margin: 10px;
 }
 
 h5 {
   font-size: clamp(0.5rem, -0.0313rem + 1.7vw, 1.5625rem);
+  margin: 10px;
 }
 
 h6 {
   font-size: clamp(0.5rem, 0.125rem + 1.2vw, 1.25rem);
+  margin: 10px;
 }
 
 P {
   font-size: clamp(0.5rem, 0.125rem + 1.2vw, 1.1rem);
+  margin: 10px;
 }
 
 h1 {
@@ -492,4 +497,25 @@ html, body {
   color: #aaa;
   font-size: 1.5rem;
   font-weight: bold;
+}
+:root {
+  --couleur1: #22738090;
+  --couleur2: #8cb0bbb4;
+  --couleur3: #d0d1d6b1;
+}
+
+.pied {
+  background-color: var(--couleur1);
+  padding: 20px 0;
+}
+.pied__global {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+}
+.pied__global div {
+  flex: 1;
+  padding: 10px;
+  text-align: left;
 }/*# sourceMappingURL=style.css.map */
