@@ -19,6 +19,7 @@ Text Domain: theme-31w
 
 /* --------------------------------------------- bases */
 @import "bases/heading";
+@import "bases/liens";
 
 /* --------------------------------------------- layouts */
 @import "layouts/page";
@@ -29,3 +30,4 @@ Text Domain: theme-31w
 @import "components/entete";
 @import "components/recherche";
 @import "components/pied";
+@import "composants/hero";

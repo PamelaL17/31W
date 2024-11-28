@@ -1,0 +1,12 @@
+a {
+  color: var(--couleur4);
+  &:visited {
+    color: #444;
+  }
+  &:selected {
+    color: var(--couleur2);
+  }
+  &:hover {
+    color: var(--couleur3);
+  }
+}

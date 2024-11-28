@@ -1,11 +1,19 @@
 :root {
-  --couleur1 : #e8c411;
-  --couleur2 : #11b6e8;
-  --couleur3 : #0e2add;
+  --couleur1: #ffde32;
+  --couleur2: #1893f8;
+  --couleur3: #ffa500;
+  --couleur4: #000;
 }
 
 html, body {
   margin: 0;
+}
+
+body {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
 }
 
 * {
@@ -13,7 +21,7 @@ html, body {
 }
 
 .global {
-  width: 1100px;
+  max-width: 1150px;
   margin: 0 auto;
   background-color: rgba(255, 255, 255, 0.184);
   padding-top: 40px;
@@ -24,6 +32,9 @@ html, body {
 //   background-color: rgba(11, 132, 132, 0.549);
 // }
 @include regle_couleur_back(".entete", $couleur1);
+@include regle_couleur_back(".principal", $couleur2);
+@include regle_couleur_back(".pied", $couleur3);
+
 
 .principal {
   background-color: rgba(200, 199, 199, 0.467);

@@ -1,53 +1,45 @@
-// <form class="recherche" role="search" method="get" action="http://localhost/31W/">
-//   <label>
-//     <input class="recherche__input" type="search" placeholder="Search..." value="" name="s">
-//   </label>
-//   <button class="recherche__bouton" type="submit">
-//     <img src="https://s2.svgbox.net/hero-outline.svg?ic=search&amp;color=000" width="32" height="32">
-//   </button>
-// </form>
-
-// .recherche {
-
-// }
-
-// .recherche__input {
-
-// }
-
-// .recherche__bouton {
-
-// }
-
-// .recherche__bouton img {
-
-// }
-
 .recherche {
-    border: 1px solid rgba(0,0,0, .5);
+  background-color: rgba(0, 0, 0, 0.05);
+  border-bottom: 3px solid rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 15px 0;
+  padding: 6px 4px;
+}
 
-    &__input, 
-    &__bouton {
-        background-color: rgba(0,0,0, .3);
-        border: none;
-        outline: none;
-        font-size: 1.5rem;
+.recherche__input {
+  background-color: rgba(0, 0, 0, 0.01);
+  color: #fff;
+  border: none;
+  height: 1.5rem;
+  font-size: 1.3rem;
+}
+.recherche__input::placeholder {
+  display: block;
+  color: #fff;
+  font-size: 1.1rem;
+  padding: 5px;
+  vertical-align: bottom;
+}
 
-        &:hover {
-            background-color: (0,0,0, .05);
-        }
+.recherche__input:focus {
+  border: none;
+  outline: none;
+  /* background-color: rgba(0,0,0,0); */
+  background-color: rgba(255, 255, 255, 0.05);
+}
 
-        &:focus {
-            background-color: (0,0,0, .02);
-            outline: none;
-        }
-    }
-    &__input::placeholder{
-        color: #aaa;
-        font-size: 1.5rem;
-        font-weight: bold;
-    }
-    img {
+.recherche__bouton {
+  background-color: transparent;
 
-    }
+  border: none;
+  outline: none;
+  padding: 5px 10px;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+/*
+.recherche__input:hover {
+    background-color: rgba(255,255,255,.05);
 }
