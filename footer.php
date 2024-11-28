@@ -2,9 +2,11 @@
     <section class="global pied__global">
       <div class="pied__colonne">
         <h4>31W</h4>
-        <h5>Exercice 2</h5>
+        <h5>TP1 Conception d'un plugin Wordpress</h5>
         <p>Auteur: Pamela Limoges</p>
-        <p><a href="https://github.com/PamelaL17/31W/tree/master" target="_blank">GitHub</a></p>
+        <p><a href="https://github.com/PamelaL17/31W/tree/master" target="_blank">GitHub 31W</a></p>
+        <p><a href="https://github.com/PamelaL17/31W_Carrousel" target="_blank">GitHub 31W_Carrousel</a></p>
+        <p><a href="https://github.com/PamelaL17/31W_FiltrePost" target="_blank">GitHub 31W_FiltrePost</a></p>
         <p><a href="https://gftnth00.mywhc.ca/31w07/" target="_blank">WHC</a></p>
     </div>
     <div class="pied__colonne">
