@@ -710,4 +710,61 @@ body {
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
+}
+
+#inscription {
+  background: linear-gradient(to right, #4e73df, #224abe);
+  padding: 50px 0;
+  color: #fff;
+}
+#inscription .inscription__contenu {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+#inscription h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+#inscription p {
+  font-size: 1rem;
+  margin-bottom: 30px;
+}
+#inscription .inscription__form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+#inscription .inscription__input {
+  padding: 10px 15px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 50px;
+  outline: none;
+  width: 300px;
+  max-width: 80%;
+  transition: 0.3s ease;
+  background-color: #e1efff;
+  color: #224abe;
+}
+#inscription .inscription__input:focus {
+  border: 2px solid #4e73df;
+  box-shadow: 0 0 10px rgba(78, 115, 223, 0.5);
+}
+#inscription .inscription__btn {
+  padding: 10px 20px;
+  background-color: #4e73df;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  text-transform: uppercase;
+}
+#inscription .inscription__btn:hover {
+  background-color: #224abe;
 }/*# sourceMappingURL=style.css.map */

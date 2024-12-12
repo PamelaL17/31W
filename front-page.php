@@ -51,7 +51,14 @@
   </section>
 
   <section id="inscription" class="global inscription">
-
+    <div class="inscription__contenu">
+      <h2>Inscrivez-vous à notre newsletter</h2>
+      <p>Recevez nos dernières nouvelles et offres directement dans votre boîte mail.</p>
+      <form action="#" method="post" class="inscription__form">
+        <input type="email" name="email" placeholder="Votre email" required class="inscription__input">
+        <button type="submit" class="inscription__btn">S'inscrire</button>
+      </form>
+    </div>
   </section>
 
   <section id="galerie_destination" class="global galerie_destination">
