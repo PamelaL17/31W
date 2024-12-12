@@ -1,11 +1,5 @@
-:root {
-  --couleur1: #365d0c90;
-  --couleur2: #3b8834b4;
-  --couleur3: #d0d1d6b1;
-}
 
 .pied {
-    background-color: var(--couleur1);
     padding: 20px 0;
 
     &__global {
@@ -53,9 +47,4 @@
             }
         }
     }
-}
-
-.logo {
-    width: 150px;
-    height: 150px;
 }

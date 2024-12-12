@@ -2,7 +2,7 @@
     <section class="global pied__global">
       <div class="pied__colonne">
         <h4>31W</h4>
-        <h5>TP1 Conception d'un plugin Wordpress</h5>
+        <h5>TP2 Club de voyage</h5>
         <p>Auteur: Pamela Limoges</p>
         <p><a href="https://github.com/PamelaL17/31W/tree/master" target="_blank">GitHub 31W</a></p>
         <p><a href="https://github.com/PamelaL17/31W_Carrousel" target="_blank">GitHub 31W_Carrousel</a></p>
@@ -14,7 +14,7 @@
       <?php get_search_form(); ?>
     </div>
     <div class="pied__colonne">
-      <img class="logo" src="<?php echo get_template_directory_uri(); ?>/img/logo-transparent-png.png" alt="logo">
+      <img class="logo" src="<?php echo get_template_directory_uri(); ?>/logo.png" alt="logo">
     </div>
     </section>
   </footer>

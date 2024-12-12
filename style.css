@@ -11,7 +11,6 @@ License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: theme-31w
 */
-/* --------------------------------------------- variables */
 /* --------------------------------------------- normalize */
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
@@ -327,11 +326,6 @@ h1 {
   font-size: clamp(2rem, -0.75rem + 4.8vw, 4rem);
 }
 
-.entete__titre h1 a {
-  color: var(--couleur3);
-  background-color: var(--couleur2);
-}
-
 h2 {
   font-size: clamp(0.625rem, -0.3125rem + 3vw, 2.5rem);
   margin: 30px;
@@ -382,26 +376,13 @@ p {
 }
 
 a {
-  color: var(--couleur4);
+  color: #000;
 }
 a:visited {
   color: #444;
 }
-a:selected {
-  color: var(--couleur2);
-}
-a:hover {
-  color: var(--couleur3);
-}
 
 /* --------------------------------------------- layouts */
-:root {
-  --couleur1: #ffde32;
-  --couleur2: #1893f8;
-  --couleur3: #ffa500;
-  --couleur4: #000;
-}
-
 html, body {
   margin: 0;
 }
@@ -425,15 +406,7 @@ body {
 }
 
 .entete {
-  background-color: var(--couleur1);
-}
-
-.principal {
-  background-color: var(--couleur2);
-}
-
-.pied {
-  background-color: var(--couleur3);
+  background-color: rgba(98, 191, 191, 0.549);
 }
 
 .principal {
@@ -441,7 +414,7 @@ body {
 }
 
 .pied {
-  background-color: rgba(11, 132, 132, 0.549);
+  background-color: rgba(118, 194, 194, 0.549);
 }
 
 /* --------------------------------------------- components */
@@ -508,7 +481,23 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.entete__titre {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.custom-logo-link {
+  display: block;
+  flex: 0 1 150px;
+}
+.custom-logo-link img {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 .entete__titre h1,
@@ -523,34 +512,52 @@ body {
 }
 
 .recherche {
-  border: 1px solid rgba(0, 0, 0, 0.5);
-}
-.recherche__input, .recherche__bouton {
-  background-color: rgba(0, 0, 0, 0.3);
-  border: none;
-  outline: none;
-  font-size: 1.5rem;
-}
-.recherche__input:hover, .recherche__bouton:hover {
-  background-color: 0, 0, 0, 0.05;
-}
-.recherche__input:focus, .recherche__bouton:focus {
-  background-color: 0, 0, 0, 0.02;
-  outline: none;
-}
-.recherche__input::placeholder {
-  color: #aaa;
-  font-size: 1.5rem;
-  font-weight: bold;
-}
-:root {
-  --couleur1: #365d0c90;
-  --couleur2: #3b8834b4;
-  --couleur3: #d0d1d6b1;
+  background-color: rgba(0, 0, 0, 0.05);
+  border-bottom: 3px solid rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 15px 0;
+  padding: 6px 4px;
 }
 
+.recherche__input {
+  background-color: rgba(0, 0, 0, 0.01);
+  color: #fff;
+  border: none;
+  height: 1.5rem;
+  font-size: 1.3rem;
+}
+
+.recherche__input::placeholder {
+  display: block;
+  color: #fff;
+  font-size: 1.1rem;
+  padding: 5px;
+}
+
+.recherche__input:focus {
+  border: none;
+  outline: none;
+  /* background-color: rgba(0,0,0,0); */
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.recherche__bouton {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  padding: 5px 10px;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+/*
+.recherche__input:hover {
+    background-color: rgba(255,255,255,.05);
+}
+*/
 .pied {
-  background-color: var(--couleur1);
   padding: 20px 0;
 }
 .pied__global {
@@ -593,7 +600,47 @@ body {
   transform: scale(0.95);
 }
 
-.logo {
-  width: 150px;
-  height: 150px;
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  color: #fff;
+  padding: 100px 20px;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+.hero h1 {
+  font-size: clamp(2rem, -0.75rem + 5.8vw, 6rem);
+  margin: 0;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.hero p {
+  font-size: clamp(1rem, -0.75rem + 2.8vw, 2rem);
+  margin: 20px 0;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.hero__contenu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.hero__cta {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: #0073aa;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.hero__cta:hover {
+  background: #005177;
 }/*# sourceMappingURL=style.css.map */

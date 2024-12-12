@@ -1,9 +1,3 @@
-:root {
-  --couleur1: #ffde32;
-  --couleur2: #1893f8;
-  --couleur3: #ffa500;
-  --couleur4: #000;
-}
 
 html, body {
   margin: 0;
@@ -28,12 +22,9 @@ body {
   padding-bottom: 40px;
 }
 
-// .entete {
-//   background-color: rgba(11, 132, 132, 0.549);
-// }
-@include regle_couleur_back(".entete", $couleur1);
-@include regle_couleur_back(".principal", $couleur2);
-@include regle_couleur_back(".pied", $couleur3);
+.entete {
+   background-color: rgba(98, 191, 191, 0.549);
+}
 
 
 .principal {
@@ -41,5 +32,5 @@ body {
 }
 
 .pied {
-  background-color: rgba(11, 132, 132, 0.549);
+  background-color: rgba(118, 194, 194, 0.549);
 }

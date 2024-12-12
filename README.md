@@ -7,13 +7,14 @@
 - Documenter les concepts de base
 - Ajouter les références qui ont permis de solutionner certains problèmes
 
-## Exercice 4
+## TP2 : Club de voyage
 
-### Objectif : Réaliser un thème de base
+### Objectifs du TP2
 
-1.	Introduire les notions de REST API
-2.	Écrire une extension qui permettra de filtrer les articles par catégories
-3.	L’extension pourra être utilisé dans n’importe quel modèle
+1. Réaliser un site WordPress pour un club de voyage. Le club offre à ses membres des voyages vers des destinations originales partout dans le monde.
+2. Chaque destination est catégorisée pour permettre aux membres de se renseigner de façon spécifique selon leur gout.
+3. Le design général permettra de mettre en valeur les offres de voyages réservées à ses membres.
+4. Déployer votre projet sur le serveur Web hosting Canada.
 
 
 - Auteur : Pamela Limoges

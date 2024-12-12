@@ -27,7 +27,7 @@
     </div>
   </section>
 
-  <section class="global">
+  <section class="global nouveau">
     <h2>Liste de cours - Front-page.php</h2>
     <div class="principal__conteneur">
       <?php if (have_posts()): ?>
@@ -41,5 +41,9 @@
     </div>
   <?php endif ?>
   </section>
+
+  <section id="inscription" class="global inscription"></section>
+
+  <section id="filtre" class="global filtre"></section>
 </main>
 <?php get_footer() ?>
