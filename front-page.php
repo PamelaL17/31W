@@ -28,22 +28,41 @@
   </section>
 
   <section class="global nouveau">
-    <h2>Liste de cours - Front-page.php</h2>
+    <h2>Les destinations favorite</h2>
     <div class="principal__conteneur">
-      <?php if (have_posts()): ?>
-        <?php while (have_posts()) :  the_post(); ?>
-
-          <article class="principal__article">
-            <h5><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h5>
-            <p><?php echo wp_trim_words(get_the_excerpt(), 20, null); ?></p>
-          </article>
-        <?php endwhile; ?>
-    </div>
-  <?php endif ?>
+  <?php if (have_posts()) : ?>
+    <?php while (have_posts()) : the_post(); ?>
+      <div class="article-summary">
+        <!-- Afficher une image dans une taille personnalisée -->
+        <?php if (has_post_thumbnail()) : ?>
+          <div class="thumbnail">
+            <a href="<?php the_permalink(); ?>">
+              <?php the_post_thumbnail('custom-wide'); ?>
+            </a>
+          </div>
+        <?php endif; ?>
+        <!-- Titre et extrait -->
+        <h2><?php the_title(); ?></h2>
+        <div><?php the_excerpt(); ?></div>
+      </div>
+    <?php endwhile; ?>
+  <?php endif; ?>
+  </div>
   </section>
 
-  <section id="inscription" class="global inscription"></section>
+  <section id="inscription" class="global inscription">
 
-  <section id="filtre" class="global filtre"></section>
+  </section>
+
+  <section id="galerie_destination" class="global galerie_destination">
+  
+  </section>
+
+  <section id="filtre" class="global filtre">
+
+  </section>
+
+  <section></section>
+
 </main>
 <?php get_footer() ?>

@@ -1,0 +1,78 @@
+// Variables pour personnaliser facilement les couleurs et tailles
+$primary-color: #0078d7;
+$secondary-color: #f5f5f5;
+$text-color: #333;
+$card-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+$border-radius: 12px;
+
+.global.nouveau {
+  padding: 2rem;
+  background-color: $secondary-color;
+  text-align: center;
+
+  h2 {
+    color: $primary-color;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .principal__conteneur {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); // Trois colonnes par rangée
+    gap: 2rem; // Espacement entre les cartes
+    justify-items: center; // Centre chaque carte dans la grille
+  }
+
+  .article-summary {
+    background: #fff;
+    border-radius: $border-radius;
+    box-shadow: $card-shadow;
+    overflow: hidden;
+    width: 100%; // Chaque carte prend l'espace disponible
+    max-width: 300px; // Taille maximale des cartes
+    padding: 1rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
+    }
+
+    .thumbnail {
+      width: 100%;
+      max-width: 200px; // Taille maximale de l'image
+      margin: 1rem auto;
+
+      img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+      }
+
+      a {
+        display: block;
+        text-decoration: none;
+      }
+    }
+
+    h2 {
+      font-size: 1.25rem;
+      color: $primary-color;
+      margin: 1rem 0 0.5rem;
+    }
+
+    div {
+      color: $text-color;
+      font-size: 0.9rem;
+      line-height: 1.4;
+      margin: 0.5rem 0;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap; // Limite à une ligne avec ellipsis
+    }
+  }
+}

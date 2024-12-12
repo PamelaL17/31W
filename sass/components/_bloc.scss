@@ -1,13 +1,19 @@
 .principal__conteneur {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 20px;
+  display: grid; // Passer à la grille CSS
+  grid-template-columns: repeat(3, 1fr); // Trois colonnes par ligne
+  gap: 20px; // Espacement entre les encadrés
 }
 
 .principal__article {
   border: 1px solid #aaa;
-  flex: 1 1 340px;
   padding: 10px;
+  background: #fff;
+  border-radius: 8px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  }
 }
