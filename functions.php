@@ -103,10 +103,6 @@ function ajout_options()
 
 add_action("after_setup_theme", "ajout_options");
 
-function custom_excerpt_length($length) {
-    return 20; // Nombre de mots dans l'extrait
-}
-add_filter('excerpt_length', 'custom_excerpt_length', 999);
 
 /* --------------------------------------------------------------------  Modifier la requête principale */
 

@@ -43,7 +43,7 @@
         <?php endif; ?>
         <!-- Titre et extrait -->
         <h2><?php the_title(); ?></h2>
-        <div><?php the_excerpt(); ?></div>
+        <p><?php echo wp_trim_words(get_the_excerpt(), 20, "suite.."); ?></p> <!-- ajouter lien -->
       </div>
     <?php endwhile; ?>
   <?php endif; ?>
