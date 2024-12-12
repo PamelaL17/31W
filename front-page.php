@@ -62,7 +62,7 @@
   </section>
 
   <section id="galerie_destination" class="global galerie_destination">
-  
+          
   </section>
 
   <section id="filtre" class="global filtre">
