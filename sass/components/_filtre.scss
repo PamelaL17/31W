@@ -1,0 +1,108 @@
+$primary-color: #0078d7;
+$secondary-color: #f5f5f5;
+$text-color: #333;
+$button-hover-color: #0056a3;
+$card-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+$border-radius: 12px;
+$card-size: 200px;
+$button-padding: 0.8rem 1.5rem;
+$button-border-radius: 8px;
+$button-font-size: 1rem;
+
+.global.filtre {
+  padding: 3rem;
+  background-color: $secondary-color;
+  text-align: center;
+
+  h2 {
+    color: $primary-color;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+  }
+
+  // Centrer les boutons et ajouter de l'espace entre eux
+  .filtre__bouton {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-bottom: 3rem;
+
+    button {
+      background-color: $primary-color;
+      color: #fff;
+      border: none;
+      border-radius: $button-border-radius;
+      padding: $button-padding;
+      font-size: $button-font-size;
+      cursor: pointer;
+      transition: background-color 0.3s, transform 0.3s;
+
+      &:hover {
+        background-color: $button-hover-color;
+        transform: scale(1.05);
+      }
+
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+
+  // Conteneur pour les résultats filtrés
+  .filtre__contenneur {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); // 3 colonnes par rangée
+    gap: 2rem;
+    justify-items: center;
+  }
+
+  .filtre__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #fff;
+    border-radius: $border-radius;
+    box-shadow: $card-shadow;
+    width: $card-size;
+    height: $card-size;
+    padding: 1rem;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
+    }
+
+    .thumbnail {
+      width: 80%;
+      height: 80%;
+      margin: 1rem auto;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 8px;
+      }
+    }
+
+    h2 {
+      font-size: 1.2rem;
+      color: $primary-color;
+      margin-bottom: 0.5rem;
+    }
+
+    p {
+      color: $text-color;
+      font-size: 0.9rem;
+      line-height: 1.4;
+      margin-top: 0.5rem;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
+    }
+  }
+}

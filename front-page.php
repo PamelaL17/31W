@@ -91,10 +91,13 @@
   </section>
 
   <section id="filtre" class="global filtre">
-      <h2>Filtrer par categorie</h2>
+    <h2>Filtrer les Destinations par Catégorie</h2>
+    <div class="filtre__conteneur">
+      <?php
+        echo do_shortcode('[extraire_cours]');
+      ?>
+    </div>
   </section>
-
-  <section></section>
 
 </main>
 <?php get_footer() ?>

@@ -3,10 +3,8 @@
 /////////////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////////
 
-
 function theme_31w_customize_register($wp_customize)
 {
-
     // Section pour la zone Hero
     $wp_customize->add_section('hero_section', array(
         'title' => __('Hero Section', 'theme_31w'),
@@ -65,18 +63,11 @@ function theme_31w_customize_register($wp_customize)
 }
 add_action('customize_register', 'theme_31w_customize_register');
 
-
 /////////////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////////
-
-
-
-
-
 
 function ajouter_style()
 {
-
     wp_enqueue_style(
         'mon_stlyle',
         get_template_directory_uri() . '/style.css',
@@ -86,7 +77,6 @@ function ajouter_style()
 }
 
 add_action('wp_enqueue_scripts', 'ajouter_style');
-
 
 function ajout_options()
 {
@@ -113,7 +103,6 @@ add_action("after_setup_theme", "ajout_options");
  * Dans ce cas ci nous filtrons la requête de la page d'accueil
  * @param WP_query  $query la requête principal de WP
  */
-
  /*
 function modifie_requete_principal($query)
 {
@@ -124,5 +113,4 @@ function modifie_requete_principal($query)
     }
 }
 add_action('pre_get_posts', 'modifie_requete_principal');
-
 */

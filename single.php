@@ -1,7 +1,7 @@
 <?php
 
 /**
- * index.php - Le modèle par défaut de wordpress
+ * index.php - Le modèle par défaut de WordPress
  */
 ?>
 <?php get_header() ?>
@@ -13,12 +13,22 @@
       <?php if (have_posts()): ?>
         <?php while (have_posts()) :  the_post(); ?>
           <article class="principal__article">
+            <!-- Afficher une image à la une -->
+            <?php if (has_post_thumbnail()) : ?>
+              <div class="thumbnail">
+                <a href="<?php the_permalink(); ?>">
+                  <?php the_post_thumbnail('custom-wide'); ?>
+                </a>
+              </div>
+            <?php endif; ?>
+
             <h2><?php the_title() ?></h2>
             <?php the_content() ?>
           </article>
         <?php endwhile; ?>
+      <?php endif; ?>
     </div>
-  <?php endif ?>
   </section>
 </main>
+
 <?php get_footer() ?>
