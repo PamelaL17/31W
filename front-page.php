@@ -62,11 +62,36 @@
   </section>
 
   <section id="galerie_destination" class="global galerie_destination">
-          
+    <h2>Galerie des Destinations</h2>
+    <div class="galerie">
+        <?php
+        $args = array(
+            'post_type' => 'post',
+            'posts_per_page' => -1, // Chargez tous les articles pour la galerie
+        );
+        $query = new WP_Query($args);
+        if ($query->have_posts()) :
+            while ($query->have_posts()) : $query->the_post();
+                if (has_post_thumbnail()) : ?>
+                    <div class="galerie__item">
+                        <a href="javascript:void(0);" class="open-carrousel" data-index="<?php echo $post->ID; ?>">
+                            <?php the_post_thumbnail('medium'); ?>
+                        </a>
+                    </div>
+                <?php endif;
+            endwhile;
+            wp_reset_postdata();
+        endif;
+        ?>
+    </div>
+    <!-- Le carrousel sera affiché ici -->
+    <div id="carrousel-container">
+        <?php echo do_shortcode('[carrousel]'); ?>
+    </div>
   </section>
 
   <section id="filtre" class="global filtre">
-
+      <h2>Filtrer par categorie</h2>
   </section>
 
   <section></section>
