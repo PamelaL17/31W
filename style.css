@@ -436,6 +436,28 @@ body {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }
 
+/* pour le single.php  */
+.single__conteneur {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.single__header h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
+
+.single__content {
+  width: 80%;
+  max-width: 1200px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
 /*
 <nav class="menu-principal-container"><ul id="menu-principal" class="menu"><li id="menu-item-56" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-56"><a href="http://localhost/31W/582-4mb-animation-3d-75h/">Animation 3D</a></li>
 <li id="menu-item-57" class="menu-item menu-item-type-post_type menu-item-object-post current-menu-item menu-item-57"><a href="http://localhost/31W/582-4pa-interfaces-web-reactives-et-animees-cours-au-choix-75h/" aria-current="page">Interfaces Web réactives et animées</a></li>

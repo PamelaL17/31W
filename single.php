@@ -7,11 +7,14 @@
 <?php get_header() ?>
 
 <main class="principal">
-  <section class="global">
-    <h2>Single.php</h2>
-    <div class="principal__conteneur">
+  <section class="global single__conteneur">
+    <div class="single__header">
+      <h2>Single.php</h2>
+    </div>
+
+    <div class="single__content principal__conteneur">
       <?php if (have_posts()): ?>
-        <?php while (have_posts()) :  the_post(); ?>
+        <?php while (have_posts()) : the_post(); ?>
           <article class="principal__article">
             <!-- Afficher une image à la une -->
             <?php if (has_post_thumbnail()) : ?>
