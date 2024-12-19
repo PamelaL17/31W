@@ -1,7 +1,7 @@
 .principal__conteneur {
-  display: grid; // Passer à la grille CSS
-  grid-template-columns: repeat(3, 1fr); // Trois colonnes par ligne
-  gap: 20px; // Espacement entre les encadrés
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 20px;
 }
 
 .principal__article {

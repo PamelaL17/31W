@@ -21,7 +21,6 @@ $button-font-size: 1rem;
     margin-bottom: 2rem;
   }
 
-  // Centrer les boutons et ajouter de l'espace entre eux
   .filtre__bouton {
     display: flex;
     justify-content: center;
@@ -53,9 +52,17 @@ $button-font-size: 1rem;
   // Conteneur pour les résultats filtrés
   .filtre__contenneur {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); // 3 colonnes par rangée
+    grid-template-columns: repeat(3, 1fr); // 3 colonnes par rangée sur grands écrans
     gap: 2rem;
     justify-items: center;
+
+    @media (max-width: 1200px) {
+    grid-template-columns: repeat(2, 1fr); // 2 colonnes pour les écrans moyens
+    }
+
+    @media (max-width: 768px) {
+      grid-template-columns: 1fr; // 1 colonne pour les petits écrans
+    }
   }
 
   .filtre__item {

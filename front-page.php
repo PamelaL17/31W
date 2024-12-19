@@ -63,11 +63,11 @@
 
   <section id="galerie_destination" class="global galerie_destination">
     <h2>Galerie des Destinations</h2>
-    <div class="galerie">
+    <div class="galerie" id="galerie-preview">
         <?php
         $args = array(
             'post_type' => 'post',
-            'posts_per_page' => -1, // Chargez tous les articles pour la galerie
+            'posts_per_page' => 10, // Affiche seulement 10 articles
         );
         $query = new WP_Query($args);
         if ($query->have_posts()) :
@@ -84,7 +84,6 @@
         endif;
         ?>
     </div>
-    <!-- Le carrousel sera affiché ici -->
     <div id="carrousel-container">
         <?php echo do_shortcode('[carrousel]'); ?>
     </div>
