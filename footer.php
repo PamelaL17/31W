@@ -11,6 +11,8 @@
         <p><a href="https://github.com/PamelaL17/31W/tree/TP2" target="_blank">GitHub 31W/TP2</a></p>
         <p><a href="https://github.com/PamelaL17/31W_Carrousel/tree/TP2_carrousel" target="_blank">GitHub 31W_Carrousel/TP2_carrousel</a></p>
         <p><a href="https://github.com/PamelaL17/31W_FiltrePost/tree/TP2_filtrepost" target="_blank">GitHub 31W_FiltrePost/TP2_filtrepost</a></p>
+        <p><a href="https://github.com/PamelaL17/31W/tree/EF" target="_blank">GitHub 31W/EF</a></p>
+        <p><a href="https://github.com/PamelaL17/31W_FiltrePays" target="_blank">GitHub 31W_FiltrePays</a></p>
         <p><a href="https://gftnth00.mywhc.ca/31w07/" target="_blank">WHC</a></p>
     </div>
 
