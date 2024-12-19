@@ -1,20 +1,18 @@
-# Projet de session du cours 31W
+# Évaluation du cours 31W
 
-## Introduction à un système de gestion de contenu
+## Épreuve Finale
 
-### Les objectifs du thème
-- Vous aider à réaliser votre propre thème
-- Documenter les concepts de base
-- Ajouter les références qui ont permis de solutionner certains problèmes
+### Les objectifs de l'épreuve finale
+Section 1 :
+    L’entête de la page contiendra un titre,  une courte introduction, une galerie d’images de différentes destinations, un carrousel qui s’activera en cliquant sur une image de la galerie. Le nombre de personnes qui voyage ensemble, la date du départ et la date de retour.
 
-## TP2 : Club de voyage
+Section 2 : 
+    Une série de liens ou boutons contenant chacun un pays. Chaque lien permet d’exécuter une requête HTTPS permettant d’afficher les destinations par pays. Les pays que l’on peut sélectionner sont les suivants :     "France","États-Unis", "Canada", "Argentine", "Chili", "Belgique", "Maroc", "Mexique", "Japon", "Italie", "Islande", "Chine", "Grèce", "Suisse"
 
-### Objectifs du TP2
+#### Descriptions
 
-1. Réaliser un site WordPress pour un club de voyage. Le club offre à ses membres des voyages vers des destinations originales partout dans le monde.
-2. Chaque destination est catégorisée pour permettre aux membres de se renseigner de façon spécifique selon leur gout.
-3. Le design général permettra de mettre en valeur les offres de voyages réservées à ses membres.
-4. Déployer votre projet sur le serveur Web hosting Canada.
+
+##### Modifications
 
 
 - Auteur : Pamela Limoges
