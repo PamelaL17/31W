@@ -50,9 +50,15 @@ get_header();
         <p><strong>Date de retour :</strong> <?php echo esc_html($date_retour); ?></p>
     </section>
 
-    <section class="filtre-destinations">
+    <section id="filtre-pays">
         <h2>Filtrer par pays</h2>
         <?php echo do_shortcode('[filtre_pays]'); ?>
+    </section>
+
+    <section id="categories-pays">
+        <?php
+        // Les résultats seront afficher dans le footer par la fonction afficher_filtre_resultats
+        ?>
     </section>
 </div>
 <?php get_footer(); ?>
