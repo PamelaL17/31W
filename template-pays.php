@@ -51,6 +51,7 @@ get_header();
     </section>
 
     <section class="filtre-destinations">
+        <h2>Filtrer par pays</h2>
         <?php echo do_shortcode('[filtre_pays]'); ?>
     </section>
 </div>

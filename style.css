@@ -1002,6 +1002,7 @@ body {
   margin-top: 40px;
   border-radius: 8px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  margin-bottom: 40px;
 }
 .page-pays .details-voyage h3 {
   font-size: 2rem;
