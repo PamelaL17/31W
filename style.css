@@ -600,6 +600,9 @@ body {
 .pied__global ul li {
   margin-bottom: 5px;
 }
+.pied__global #info {
+  margin-left: -200px;
+}
 .pied__global div {
   flex: 1;
   padding: 10px;
